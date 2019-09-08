@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pie} from 'react-chartjs-2';
+import {Doughnut} from 'react-chartjs-2';
 
 import Grid from '@material-ui/core/Grid'
 
@@ -61,14 +61,14 @@ export default function Quad3(props) {
     return (
       <div>
         <h2>Supply & Demand</h2>
-        <Grid container spacing={3} style={{ padding: 20 }}>
+        <Grid container spacing={3} style={{ padding: 20, height: '100%' }}>
             <Grid item xs={6}>Number of participants by type, by 2023 in Penrith and nearby suburbs</Grid>
             <Grid item xs={6}>Estimated NDIS workers in each occupation (full-time equivalent), by 2023</Grid>
             <Grid item xs={6}>
-                <Pie data={data1} options={{legend: {display: false}}}/>
+                <Doughnut data={data1} options={{legend: {display: false}}}/>
             </Grid>
             <Grid item xs={6}>
-                <Pie data={data2} options={{legend: {display: false}}}/>
+                <Doughnut data={data2} options={{legend: {display: false}}}/>
             </Grid>
             <Grid item xs={6}><b>Total: 4095</b></Grid>
             <Grid item xs={6}><b>Total: 1489</b></Grid>

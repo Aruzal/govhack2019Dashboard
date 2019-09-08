@@ -8,9 +8,10 @@ import Snackbar from '@material-ui/core/Snackbar'
 
 import Navbar from './components/Navbar'
 
-import Chart1 from './components/Chart1'
+import Quad1 from './components/Quad1'
+import Quad2 from './components/Quad2'
 import Quad3 from './components/Quad3'
-import Table from './components/Table'
+import Quad4 from './components/Quad4'
 
 import Notification from './components/Notification'
 import NotificationButton from './components/NotificationButton'
@@ -68,14 +69,14 @@ function App() {
 
           <Grid item xs={6}>
             <Paper className={classes.paper}>
-              <Chart1 updated={updated}/>
+              <Quad1 updated={updated}/>
               <NotificationButton onClick={_handleSubscribe} />
             </Paper>
           </Grid>
 
           <Grid item xs={6}>
             <Paper className={classes.paper}>
-              <Chart1/>
+              <Quad3/>
               <NotificationButton />
             </Paper>
           </Grid>
@@ -89,7 +90,7 @@ function App() {
 
           <Grid item xs={6}>
             <Paper className={classes.paper}>
-              <Table/>
+              <Quad4/>
               <NotificationButton />
             </Paper>
           </Grid>
